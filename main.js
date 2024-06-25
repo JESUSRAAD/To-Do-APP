@@ -26,8 +26,10 @@ label.setAttribute( "for" , "ToDo")
 input.id="ToDo"
 input.name="ToDo"
 button1.textContent="Add"
-button2.type="submit"
+button1.className="addClearStyle"
+button1.type="submit"
 button2.textContent="clear"
+button2.className="addClearStyle"
 button2.type="reset"
 
 
@@ -41,6 +43,7 @@ form.addEventListener("submit", (event) => {
     li.textContent=event.target.ToDo.value
     const buttonDelet=document.createElement("button")
     buttonDelet.textContent="Delete"
+    buttonDelet.id="deleteButton"
     li.appendChild(buttonDelet)
     ul.appendChild(li)
 

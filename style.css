@@ -1,28 +1,87 @@
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  font-family: Arial, sans-serif;
+  background-color: rgba(128, 128, 128, 0.322);
+  height: 100vh;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid ;
-    width: 80vw;
+h3 {
+  font-size: 24px;
+  text-align: center;
 }
-#divButtonStyle{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 80vw;
+  padding: 15px;
+  background-color: white;
+  border: 2px solid rgba(255, 255, 255, 0.867);
+  border-radius: 8px;
+}
+
+ label {
+  font-size: 18px;
+}
+
+ input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#divButtonStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.addClearStyle {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  width: 98vw;
+}
+ li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#deleteButton {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+}
+
+#deleteButton:hover {
+  background-color: rgba(255, 0, 0, 0.626);
 }
