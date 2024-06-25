@@ -44,15 +44,24 @@ form.addEventListener("submit", (event) => {
     li.appendChild(buttonDelet)
     ul.appendChild(li)
 
+    const liGrup=document.querySelectorAll("li");
+liGrup.forEach((li, i)=>{
+    buttonDelet.addEventListener("click",()=>{
+        li.remove()
+    })
+})
+
+})
+
+button2.addEventListener("click", ()=>{
+
+    const li=document.querySelectorAll("li");
+   for (let i = 0; i < li.length; i++) {
+    li[i].remove()
+    
+   }
 
 
 })
 
-// button2.addEventListener("click", ()=>{
-
-
-//     ul.
-
-
-// })
 
